@@ -13,13 +13,38 @@
     <title></title>
   </head>
   <body>
+    <header class="fixed-top">
+        <div class="bg-dark collapse" id="navbarHeader" style="">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 py-4">
+                <h4 class="text-white">About</h4>
+                <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark box-shadow">
+          <div class="container d-flex justify-content-between">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <i class="bi bi-vinyl-fill mr-2"></i>
+              <strong>Francesco</strong>
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+      </header>
     <div class="container">
         <div class="row">
             <div class="col-12 cover-band"></div>
         </div>
         <div class="row album">
             <div class="col-12 d-flex justify-content-center">
-                <img class="rounded-lg" src="assets/album-cover.jpg" style="height: 300px; margin: -148px 0 38px 0;">
+                <img class="rounded-lg" src="assets/album-cover.jpg" style="height: 300px; margin: -148px 0 38px 0;z-index: 3;">
+                <img id="vinile" class="rounded-lg" src="assets/Vinyl_record.svg.png" style="height: 300px; margin: -148px 0 38px -148px; z-index: 0;">
             </div>
             <div class="col-12 d-flex justify-content-center">
                 <h1 class="mb-2" style="font-size: 72px; font-weight: 700; letter-spacing: -0.125rem; margin-bottom: 0px;">Sempiternal</h1>
@@ -29,11 +54,60 @@
             </div>
         </div>
         <div class="row d-flex justify-content-center mt-3">
-            <button type="button" class="btn btn-success mr-3"><i class="bi bi-spotify mr-2"></i>Listen on Spotify</button>
-            <a href="https://amzn.eu/d/dxWBZbO"><button type="button" class="btn btn-dark">Buy Directly<span class="badge badge-secondary ml-2">€ 12,05</span></button></a>
+            <a href="https://open.spotify.com/album/6IYPmM3xsOPL2XPSvf1ZAz?si=tjYteL_1Q-eWth4o5sBaag"> <button type="button" class="btn btn-lg btn-success mr-3"><i class="bi bi-spotify mr-2"></i>Listen on Spotify</button></a>
+            <a href="https://amzn.eu/d/dxWBZbO"><button type="button" class="btn btn-lg btn-outline-dark">Buy Directly<span class="badge badge-secondary ml-2">€ 12,05</span></button></a>
 
         </div>
     </div>
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card mb-3 bg-white">
+                    <img src="assets/album-cover-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">That's the Spirit</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button type="button" class="btn btn-primary btn-md btn-block">Play Album<i class="bi bi-play-fill ml-2"></i> </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card mb-3">
+                    <img src="assets/album-cover-2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Amo</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button type="button" class="btn btn-primary btn-md btn-block">Play Album<i class="bi bi-play-fill ml-2"></i> </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card mb-3">
+                    <img src="assets/album-cover-3.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Live at the Royal Albert Hall
+                        </h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button type="button" class="btn btn-primary btn-md btn-block">Play Album<i class="bi bi-play-fill ml-2"></i> </button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card mb-3">
+                    <img src="assets/album-cover-4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Post Human: Survival Horror</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button type="button" class="btn btn-primary btn-md btn-block">Play Album<i class="bi bi-play-fill ml-2"></i> </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>

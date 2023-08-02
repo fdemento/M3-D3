@@ -8,6 +8,16 @@
     border-radius: 15px;
 }
 
+#vinile.rounded-lg {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#vinile.rounded-lg:hover {
+    transform: translateX(32px);
+    transition: 0.3s;
+}
+
 h1 .display-1 {
     font-weight: 700;
 }

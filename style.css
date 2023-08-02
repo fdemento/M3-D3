@@ -1,0 +1,13 @@
+.cover-band {
+    height: 350px;
+    background: url(assets/cover-band-1.webp);
+    background-position: top;
+    background-size: cover;
+    border: 1px solid #bcbcbc;
+    box-shadow: 0px 2px 20px 0px rgba(139, 163, 173, 0.5);
+    border-radius: 15px;
+}
+
+h1 .display-1 {
+    font-weight: 700;
+}

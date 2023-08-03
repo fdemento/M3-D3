@@ -14,34 +14,35 @@
   </head>
   <body>
     <header class="fixed-top">
-        <div class="bg-dark collapse" id="navbarHeader" style="">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 py-4">
-                <h4 class="text-white">About</h4>
-                <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
-              </div>
-              
-            </div>
-          </div>
-        </div>
-        <div class="navbar navbar-dark bg-dark box-shadow">
-          <div class="container d-flex justify-content-between">
-            <a href="#" class="navbar-brand d-flex align-items-center">
-                <i class="bi bi-vinyl-fill mr-2"></i>
-              <strong>Francesco</strong>
-            </a>
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-          </div>
-        </div>
-      </header>
-    <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Disabled</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <div class="container mt-">
         <div class="row">
             <div class="col-12 cover-band"></div>
         </div>
         <div class="row album">
+            
             <div class="col-12 d-flex justify-content-center">
                 <img class="rounded-lg" src="assets/album-cover.jpg" style="height: 300px; margin: -148px 0 38px 0;z-index: 3;">
                 <img id="vinile" class="rounded-lg" src="assets/Vinyl_record.svg.png" style="height: 300px; margin: -148px 0 38px -148px; z-index: 0;">
@@ -54,9 +55,25 @@
             </div>
         </div>
         <div class="row d-flex justify-content-center mt-3">
-            <a href="https://open.spotify.com/album/6IYPmM3xsOPL2XPSvf1ZAz?si=tjYteL_1Q-eWth4o5sBaag"> <button type="button" class="btn btn-lg btn-success mr-3"><i class="bi bi-spotify mr-2"></i>Listen on Spotify</button></a>
-            <a href="https://amzn.eu/d/dxWBZbO"><button type="button" class="btn btn-lg btn-outline-dark">Buy Directly<span class="badge badge-secondary ml-2">€ 12,05</span></button></a>
+            <a href="https://open.spotify.com/album/6IYPmM3xsOPL2XPSvf1ZAz?si=tjYteL_1Q-eWth4o5sBaag">
+                <button type="button" class="btn btn-lg btn-success mr-3"><i class="bi bi-spotify mr-2"></i>Listen on Spotify</button>
+            </a>
+            <a href="https://amzn.eu/d/dxWBZbO">
+                <button type="button" class="btn btn-lg btn-outline-dark mr-3">Buy Directly<span class="badge badge-secondary ml-2">€ 12,05</span></button>
+            </a>
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Button with data-target
+              </button>
+            
+            <div class="collapse mt-3" id="collapseExample">
+              <div class="card card-body">
+                Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+              </div>
+            </div>
 
+        </div>
+        <div class="row">
+                
         </div>
     </div>
 
@@ -107,9 +124,8 @@
         </div>
     </div>
 
-
-
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    
   </body>
 </html>
